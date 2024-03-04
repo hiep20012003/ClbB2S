@@ -4,7 +4,7 @@
 
 /*==================== VARIABLES CSS ==================== */
 :root {
-    --header-height: 4rem;
+    --header-height: 2.5rem;
 
     /* ====================  Color ==================== */
     --hue-color: 0;
@@ -62,6 +62,8 @@
         --small-font-size: 1.125rem;
         --smaller-font-size: .875rem;
         --text-line-height: 2rem;
+        --header-height: 4rem;
+
     }
 }
 
@@ -168,7 +170,15 @@ img {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background: var(--black-color);
+    background: hsla(0, 100%, 13%, 1);
+
+    background: linear-gradient(0deg, hsla(0, 100%, 6%, 1) 0%, hsla(0, 0%, 0%, 1) 50%, hsla(0, 100%, 4%, 1) 100%);
+
+    background: -moz-linear-gradient(0deg, hsla(0, 100%, 6%, 1) 0%, hsla(0, 0%, 0%, 1) 50%, hsla(0, 100%, 4%, 1) 100%);
+
+    background: -webkit-linear-gradient(0deg, hsla(0, 100%, 6%, 1) 0%, hsla(0, 0%, 0%, 1) 50%, hsla(0, 100%, 4%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#440000", endColorstr="#000000", GradientType=1);
 }
 
 .nav {
@@ -180,9 +190,9 @@ img {
 }
 
 .nav__logo {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     display: flex;
-    width: 4rem;
+    width: 3rem;
 }
 
 .nav__button {
@@ -254,6 +264,10 @@ img {
     .nav__close,
     .nav__toggle {
         display: none;
+    }
+
+    .nav__logo {
+        width: 5rem;
     }
 
     .nav__list li .register__button {
@@ -1018,7 +1032,15 @@ img {
 /*  footer */
 
 .footer {
-    background-image: linear-gradient(0deg, #4b1503, #120403);
+    background: hsla(0, 100%, 13%, 1);
+
+    background: linear-gradient(0deg, hsla(0, 100%, 6%, 1) 0%, hsla(0, 0%, 0%, 1) 50%, hsla(0, 100%, 4%, 1) 100%);
+
+    background: -moz-linear-gradient(0deg, hsla(0, 100%, 6%, 1) 0%, hsla(0, 0%, 0%, 1) 50%, hsla(0, 100%, 4%, 1) 100%);
+
+    background: -webkit-linear-gradient(0deg, hsla(0, 100%, 6%, 1) 0%, hsla(0, 0%, 0%, 1) 50%, hsla(0, 100%, 4%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#440000", endColorstr="#000000", GradientType=1);
     padding: 36px 0;
     font-size: var(--normal-font-size);
 }
