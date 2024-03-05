@@ -19,12 +19,13 @@ if (navClose) {
 }
 
 //  remove nav menu when clicked nav link
-const navLinks = document.querySelectorAll('.nav-link');
+const navLinks = document.querySelectorAll('.nav__link');
 
 function linkAction() {
     const navMenu = document.getElementById('nav-menu');
 
     navMenu.classList.remove('show-menu');
+    console.log("linkAction");
 }
 
 navLinks.forEach(n => n.addEventListener('click', linkAction));
